@@ -1,0 +1,6 @@
+# Unreal Build Results
+Intermediate/
+Binaries/
+
+# No need to sync the backup file ghostwriter creates
+README.md.backup

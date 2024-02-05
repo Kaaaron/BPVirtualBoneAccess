@@ -1,0 +1,21 @@
+﻿{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "BPVirtualBoneAccess",
+	"Description": "A small plugin to allow access to the data of virtual bones from Blueprints as well.",
+	"Category": "Animation",
+	"CreatedBy": "Aaron Kemner",
+	"CreatedByURL": "https://www.artstation.com/aaronkemner",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "BPVirtualBoneAccess",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
