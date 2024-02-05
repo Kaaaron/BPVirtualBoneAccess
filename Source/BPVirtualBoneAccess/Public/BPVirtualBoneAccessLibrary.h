@@ -1,8 +1,9 @@
-﻿// Copyright Epic Games, Inc. All Rights Reserved.
+﻿// Copyright 2024 Aaron Kemner, All Rights Reserved.
 
 #pragma once
 
 #include "Kismet/BlueprintFunctionLibrary.h"
+#include "Animation/Skeleton.h"
 #include "BPVirtualBoneAccessLibrary.generated.h"
 
 
@@ -27,13 +28,13 @@ public:
 		:SourceBoneName(NAME_None),
 		TargetBoneName(NAME_None),
 		VirtualBoneName(NAME_None)
-	{}
-	
-	FBPVirtualBone(const FVirtualBone& NativeVB)
+	{};
+
+	explicit FBPVirtualBone(const FVirtualBone& NativeVB)
 		:SourceBoneName(NativeVB.SourceBoneName),
 		TargetBoneName(NativeVB.TargetBoneName),
 		VirtualBoneName(NativeVB.VirtualBoneName)
-	{}
+	{};
 
 	friend uint32 GetTypeHash(const FBPVirtualBone& Key)
 	{
@@ -42,21 +43,21 @@ public:
 					GetTypeHash(Key.SourceBoneName),
 					GetTypeHash(Key.TargetBoneName)),
 				GetTypeHash(Key.VirtualBoneName));
-	}
+	};
 
 	bool operator==(const FBPVirtualBone& Other) const
 	{
 		return ( SourceBoneName == Other.SourceBoneName &&
 			TargetBoneName == Other.TargetBoneName &&
 			VirtualBoneName == Other.VirtualBoneName);
-	}
+	};
 
 	bool operator==(const FVirtualBone& Other) const
 	{
 		return ( SourceBoneName == Other.SourceBoneName &&
 			TargetBoneName == Other.TargetBoneName &&
 			VirtualBoneName == Other.VirtualBoneName);
-	}
+	};
 };
 
 /* 

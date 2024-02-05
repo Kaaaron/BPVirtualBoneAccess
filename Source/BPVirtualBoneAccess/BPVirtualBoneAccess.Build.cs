@@ -1,4 +1,4 @@
-﻿// Some copyright should be here...
+﻿// Copyright 2024 Aaron Kemner, All Rights Reserved.
 
 using UnrealBuildTool;
 

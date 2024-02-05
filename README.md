@@ -1,4 +1,4 @@
-# Small Plugin to access Virtual Bones from Blueprints
+# A Small Plugin to access Virtual Bones from Blueprints
 
 ## Why?
 A while ago, a question on the AnimState Discord server came up on whether it is possible to get more details about virtual bones from Blueprints.
@@ -16,3 +16,5 @@ Not anymore, all the work is done here! :D
 
 ## Compatibility
 I created the Plugin in UE5.3, but I assume it will also be valid in other versions, at least down to 5.0
+
+Currently I have only Win64 as whitelisted platform since I just want quick builds and don't want to mess with other SDKs or similar, but it should still work, you'll just have to compile it yourself.
